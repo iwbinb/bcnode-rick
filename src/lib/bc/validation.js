@@ -72,7 +72,7 @@ function isValidBlock(newBlock, type = 0) {
     //return false
   }
   let btcHeight = newBlock.getBlockchainHeaders().getBtcList()[0].getHeight();
-  if (btcHeight > 551000) {
+  if (btcHeight > 550000) {
     logger.warn('rejecting shitty btc block with height=' + btcHeight);
     return false;
   }
