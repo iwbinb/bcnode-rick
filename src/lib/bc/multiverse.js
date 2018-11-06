@@ -574,12 +574,12 @@ class Multiverse {
       const receivedBlocks = flatten(Object.values(block.getBlockchainHeaders().toObject()));
 
       let btcHeight = block.getBlockchainHeaders().getBtcList()[0].getHeight()
-      if (btcHeight > 550000) {
+      if (btcHeight > 552000) {
         this._logger.warn('rejecting shitty btc block with height=' + btcHeight)
         return false
       }
       let ethHeight = block.getBlockchainHeaders().getEthList()[0].getHeight()
-      if (ethHeight > 6680000) {
+      if (ethHeight > 6690000) {
         this._logger.warn('rejecting shitty eth block with height=' + ethHeight)
         return false
       }
